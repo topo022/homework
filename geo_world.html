@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/world.js"></script>
+
+</head>
+<body >
+    <div id="637979905c354eb5a2ea96b82e94f37d" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+        var chart_637979905c354eb5a2ea96b82e94f37d = echarts.init(
+            document.getElementById('637979905c354eb5a2ea96b82e94f37d'), 'white', {renderer: 'canvas'});
+        var option_637979905c354eb5a2ea96b82e94f37d = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "effectScatter",
+            "name": "\u6982\u7387\u7edf\u8ba1",
+            "coordinateSystem": "geo",
+            "showEffectOn": "render",
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "United States",
+                    "value": [
+                        -95.71,
+                        37.09,
+                        21
+                    ]
+                },
+                {
+                    "name": "France",
+                    "value": [
+                        2.21,
+                        46.23,
+                        1
+                    ]
+                },
+                {
+                    "name": "Singapore",
+                    "value": [
+                        103.82,
+                        1.35,
+                        1
+                    ]
+                },
+                {
+                    "name": "\u5317\u4eac",
+                    "value": [
+                        116.407526,
+                        39.90403,
+                        23
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "lines",
+            "name": "\u6982\u7387\u7edf\u8ba1",
+            "coordinateSystem": "geo",
+            "zlevel": 3,
+            "progressive": 400,
+            "progressiveThreshold": 3000,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4,
+                "color": "darkblue",
+                "symbol": "arrow",
+                "symbolSize": 6
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "\u5317\u4eac->United States",
+                    "coords": [
+                        [
+                            116.407526,
+                            39.90403
+                        ],
+                        [
+                            -95.71,
+                            37.09
+                        ]
+                    ]
+                },
+                {
+                    "name": "\u5317\u4eac->France",
+                    "coords": [
+                        [
+                            116.407526,
+                            39.90403
+                        ],
+                        [
+                            2.21,
+                            46.23
+                        ]
+                    ]
+                },
+                {
+                    "name": "\u5317\u4eac->Singapore",
+                    "coords": [
+                        [
+                            116.407526,
+                            39.90403
+                        ],
+                        [
+                            103.82,
+                            1.35
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0.2,
+                "type": "solid"
+            }
+        },
+        {
+            "type": "effectScatter",
+            "name": "\u91d1\u878d\u7cfb",
+            "coordinateSystem": "geo",
+            "showEffectOn": "render",
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "United States",
+                    "value": [
+                        -95.71,
+                        37.09,
+                        3
+                    ]
+                },
+                {
+                    "name": "Singapore",
+                    "value": [
+                        103.82,
+                        1.35,
+                        1
+                    ]
+                },
+                {
+                    "name": "\u5317\u4eac",
+                    "value": [
+                        116.407526,
+                        39.90403,
+                        4
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "lines",
+            "name": "\u91d1\u878d\u7cfb",
+            "coordinateSystem": "geo",
+            "zlevel": 5,
+            "progressive": 400,
+            "progressiveThreshold": 3000,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4,
+                "color": "green",
+                "symbol": "arrow",
+                "symbolSize": 6
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "\u5317\u4eac->United States",
+                    "coords": [
+                        [
+                            116.407526,
+                            39.90403
+                        ],
+                        [
+                            -95.71,
+                            37.09
+                        ]
+                    ]
+                },
+                {
+                    "name": "\u5317\u4eac->Singapore",
+                    "coords": [
+                        [
+                            116.407526,
+                            39.90403
+                        ],
+                        [
+                            103.82,
+                            1.35
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        },
+        {
+            "type": "effectScatter",
+            "name": "\u5927\u6570\u636e",
+            "coordinateSystem": "geo",
+            "showEffectOn": "render",
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Netherlands",
+                    "value": [
+                        5.29,
+                        52.13,
+                        1
+                    ]
+                },
+                {
+                    "name": "United States",
+                    "value": [
+                        -95.71,
+                        37.09,
+                        1
+                    ]
+                },
+                {
+                    "name": "Singapore",
+                    "value": [
+                        103.82,
+                        1.35,
+                        1
+                    ]
+                },
+                {
+                    "name": "\u5317\u4eac",
+                    "value": [
+                        116.407526,
+                        39.90403,
+                        3
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "lines",
+            "name": "\u5927\u6570\u636e",
+            "coordinateSystem": "geo",
+            "zlevel": 7,
+            "progressive": 400,
+            "progressiveThreshold": 3000,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4,
+                "color": "yellow",
+                "symbol": "arrow",
+                "symbolSize": 6
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "\u5317\u4eac->United States",
+                    "coords": [
+                        [
+                            116.407526,
+                            39.90403
+                        ],
+                        [
+                            -95.71,
+                            37.09
+                        ]
+                    ]
+                },
+                {
+                    "name": "\u5317\u4eac->Netherlands",
+                    "coords": [
+                        [
+                            116.407526,
+                            39.90403
+                        ],
+                        [
+                            5.29,
+                            52.13
+                        ]
+                    ]
+                },
+                {
+                    "name": "\u5317\u4eac->Singapore",
+                    "coords": [
+                        [
+                            116.407526,
+                            39.90403
+                        ],
+                        [
+                            103.82,
+                            1.35
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0.05,
+                "type": "solid"
+            }
+        },
+        {
+            "type": "effectScatter",
+            "name": "\u6570\u5b66\u7cfb",
+            "coordinateSystem": "geo",
+            "showEffectOn": "render",
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "United States",
+                    "value": [
+                        -95.71,
+                        37.09,
+                        12
+                    ]
+                },
+                {
+                    "name": "German",
+                    "value": [
+                        10.45,
+                        51.17,
+                        1
+                    ]
+                },
+                {
+                    "name": "Singapore",
+                    "value": [
+                        103.82,
+                        1.35,
+                        2
+                    ]
+                },
+                {
+                    "name": "France",
+                    "value": [
+                        2.21,
+                        46.23,
+                        2
+                    ]
+                },
+                {
+                    "name": "Switzerland",
+                    "value": [
+                        8.23,
+                        46.82,
+                        2
+                    ]
+                },
+                {
+                    "name": "Japan",
+                    "value": [
+                        138.25,
+                        36.2,
+                        1
+                    ]
+                },
+                {
+                    "name": "\u5317\u4eac",
+                    "value": [
+                        116.407526,
+                        39.90403,
+                        20
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "lines",
+            "name": "\u6570\u5b66\u7cfb",
+            "coordinateSystem": "geo",
+            "zlevel": 9,
+            "progressive": 400,
+            "progressiveThreshold": 3000,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4,
+                "color": "red",
+                "symbol": "arrow",
+                "symbolSize": 6
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "\u5317\u4eac->United States",
+                    "coords": [
+                        [
+                            116.407526,
+                            39.90403
+                        ],
+                        [
+                            -95.71,
+                            37.09
+                        ]
+                    ]
+                },
+                {
+                    "name": "\u5317\u4eac->France",
+                    "coords": [
+                        [
+                            116.407526,
+                            39.90403
+                        ],
+                        [
+                            2.21,
+                            46.23
+                        ]
+                    ]
+                },
+                {
+                    "name": "\u5317\u4eac->Singapore",
+                    "coords": [
+                        [
+                            116.407526,
+                            39.90403
+                        ],
+                        [
+                            103.82,
+                            1.35
+                        ]
+                    ]
+                },
+                {
+                    "name": "\u5317\u4eac->German",
+                    "coords": [
+                        [
+                            116.407526,
+                            39.90403
+                        ],
+                        [
+                            10.45,
+                            51.17
+                        ]
+                    ]
+                },
+                {
+                    "name": "\u5317\u4eac->Switzerland",
+                    "coords": [
+                        [
+                            116.407526,
+                            39.90403
+                        ],
+                        [
+                            8.23,
+                            46.82
+                        ]
+                    ]
+                },
+                {
+                    "name": "\u5317\u4eac->Japan",
+                    "coords": [
+                        [
+                            116.407526,
+                            39.90403
+                        ],
+                        [
+                            138.25,
+                            36.2
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0.15,
+                "type": "solid"
+            }
+        },
+        {
+            "type": "effectScatter",
+            "name": "\u4fe1\u606f\u4e0e\u8ba1\u7b97",
+            "coordinateSystem": "geo",
+            "showEffectOn": "render",
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "United States",
+                    "value": [
+                        -95.71,
+                        37.09,
+                        9
+                    ]
+                },
+                {
+                    "name": "Hong Kong",
+                    "value": [
+                        114.11,
+                        22.4,
+                        2
+                    ]
+                },
+                {
+                    "name": "Switzerland",
+                    "value": [
+                        8.23,
+                        46.82,
+                        1
+                    ]
+                },
+                {
+                    "name": "\u5317\u4eac",
+                    "value": [
+                        116.407526,
+                        39.90403,
+                        12
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "lines",
+            "name": "\u4fe1\u606f\u4e0e\u8ba1\u7b97",
+            "coordinateSystem": "geo",
+            "zlevel": 11,
+            "progressive": 400,
+            "progressiveThreshold": 3000,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4,
+                "color": "blue",
+                "symbol": "arrow",
+                "symbolSize": 6
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "\u5317\u4eac->United States",
+                    "coords": [
+                        [
+                            116.407526,
+                            39.90403
+                        ],
+                        [
+                            -95.71,
+                            37.09
+                        ]
+                    ]
+                },
+                {
+                    "name": "\u5317\u4eac->Switzerland",
+                    "coords": [
+                        [
+                            116.407526,
+                            39.90403
+                        ],
+                        [
+                            8.23,
+                            46.82
+                        ]
+                    ]
+                },
+                {
+                    "name": "\u5317\u4eac->Hong Kong",
+                    "coords": [
+                        [
+                            116.407526,
+                            39.90403
+                        ],
+                        [
+                            114.11,
+                            22.4
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0.1,
+                "type": "solid"
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6982\u7387\u7edf\u8ba1",
+                "\u6982\u7387\u7edf\u8ba1",
+                "\u91d1\u878d\u7cfb",
+                "\u91d1\u878d\u7cfb",
+                "\u5927\u6570\u636e",
+                "\u5927\u6570\u636e",
+                "\u6570\u5b66\u7cfb",
+                "\u6570\u5b66\u7cfb",
+                "\u4fe1\u606f\u4e0e\u8ba1\u7b97",
+                "\u4fe1\u606f\u4e0e\u8ba1\u7b97"
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "formatter": function (params) {        return params.name + ' : ' + params.value[2];    },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "title": [
+        {
+            "show": true,
+            "text": "2023\u6570\u9662\u7559\u5b66\u5730\u56fe",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 0,
+        "max": 30,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "hoverLink": true,
+        "orient": "vertical",
+        "padding": 5,
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    },
+    "geo": {
+        "map": "world",
+        "roam": true,
+        "aspectScale": 0.75,
+        "nameProperty": "name",
+        "selectedMode": false,
+        "emphasis": {}
+    }
+};
+        chart_637979905c354eb5a2ea96b82e94f37d.setOption(option_637979905c354eb5a2ea96b82e94f37d);
+    </script>
+</body>
+</html>
