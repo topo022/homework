@@ -19,3 +19,7 @@
 《光荣与梦想》记录了美国1932-1972年的历史，人物在其中出现的多少体现了在那个动荡的年代哪些人对时局的发展起到的或大或小的作用。
 
 [光荣与梦想人物词频统计](https://topo022.github.io/homework/光荣与梦想.html)  [code](https://topo022.github.io/homework/word.py)
+## 第二次作业
+### 作业一
+设计一个网页，实现某个搜索引擎的搜索功能
+[Google一下……](https://topo022.github.io/homework/search.html)
