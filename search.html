@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s ease; /* 添加过渡效果 */
+            /*background: linear-gradient(to bottom, #64e46d, #ecf290);*/
+            background-image: url('image/jianbian.png'); /* 设置背景图片 */
+            background-size: cover; /* 确保背景图片填满整个屏幕 */
+            background-repeat: no-repeat; /* 防止背景图片重复 */
+        }
+        body.night-mode {
+            transition: background-color 0.3s ease; /* 添加过渡效果 */
+            /*background: linear-gradient(to bottom, #491059, #231062);*/
+            background-image: url('image/jianbian2.png'); /* 设置背景图片 */
+            background-size: cover; /* 确保背景图片填满整个屏幕 */
+            background-repeat: no-repeat; /* 防止背景图片重复 */
+        }
+        .container {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .glass-image {
+            position: absolute; /* 将第一行图片设为绝对定位 */
+            top: -30px; /* 向下移动50px */
+            left: 0; /* 水平居中 */
+            right: 0;
+            transform: scale(0.08);
+            opacity: 0.5;
+        }
+        input[type="text"] {
+            width: 200px; /* 设置搜索框初始宽度 */
+            height: 30px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            margin-top: 20px;
+            text-align: center; /* 将搜索框中的文本居中 */
+            transition: width 0.3s ease; /* 添加过渡效果 */
+        }
+        input[type="text"]:focus {
+            width: 600px; /* 设置搜索框获得焦点时的宽度 */
+        }
+        input[type="submit"] {
+            width: 70px;
+            height: 30px;
+            border-radius: 10px;
+            align-items: center;
+            background-color: #007bff;
+            color: #fff;
+
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            margin-top: 200px;
+        }
+
+        .images img {
+            max-width: 100px;
+            margin: 0 30px;
+            transform: scale(0.8);
+        }
+        .time {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .night-mode {
+            background-color: #333; /* 设置背景颜色为暗色 */
+            color: #fff; /* 设置文本颜色为白色 */
+        }
+        .toggle-container {
+            display: inline-block;
+            position: relative;
+        }
+        .toggle-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            transition: background-color 0.3s ease;
+            outline: none;
+        }
+        .toggle-button:focus-visible {
+            outline: none;
+        }
+        .indicator {
+            position: absolute;
+            top: 5%;
+            left: 5px;
+            transform: translateY(-0%);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #fff;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .toggle-container.checked .indicator {
+            transform: translateX(100%);
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="toggle-container" onclick="toggleNightMode()">
+            <div class="toggle-button"></div>
+            <div class="indicator"></div>
+
+        </button>
+        <div class="time" id="time"></div>
+
+        <form action="https://www.google.com/search" method="get" target="_blank">
+            <input type="text" name="q" placeholder="Google一下……">
+
+            <!--点击“提交”按钮后，注意浏览器地址栏的变化-->
+        </form>
+
+        <div class="images">
+            <a href="https://pku.edu.cn/" target="_blank">
+            <img src="image/pku.png" >
+            </a>
+            <a href="https://bilibili.com/" target="_blank">
+            <img src="image/bilibili.png" >
+            </a>
+            <a href="https://chat.openai.com/" target="_blank">
+            <img src="image/chat.png" >
+            </a>
+            <a href="https://www.zhihu.com/" target="_blank">
+            <img src="image/zhihu.png" >
+            </a>
+        </div>
+        <label for="wallpaper-input">选择壁纸</label> <!-- 添加label标签 -->
+        <input id="wallpaper-input" type="file" accept="image/*" onchange="setBackground(this)">
+    </div>
+    <script>
+        function updateTime() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+            var timeString = hours.toString().padStart(2, '0') + ':' +
+                minutes.toString().padStart(2, '0') ;
+            document.getElementById('time').textContent = '' + timeString;
+        }
+
+        updateTime(); // 初次加载时更新时间
+        setInterval(updateTime, 1000); // 每秒更新一次时间
+
+        function toggleNightMode() {
+            var toggleContainer = document.querySelector('.toggle-container');
+            toggleContainer.classList.toggle('checked');
+            document.body.classList.toggle('night-mode'); // 切换body元素的类 night-mode
+        }
+        function setBackground(input) {
+            var file = input.files[0];
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                document.body.style.backgroundImage = 'url(' + e.target.result + ')';
+            }
+            reader.readAsDataURL(file);
+        }
+    </script>
+</body>
+</html>
