@@ -24,3 +24,7 @@
 设计一个网页，实现某个搜索引擎的搜索功能
 
 [Google一下……](https://topo022.github.io/homework/search.html)
+### 作业二
+光荣与梦想人物共现分析
+
+[光荣与梦想](https://topo022.github.io/homework/光荣与梦想网页关系图.html)
