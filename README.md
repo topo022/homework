@@ -21,5 +21,6 @@
 [光荣与梦想人物词频统计](https://topo022.github.io/homework/光荣与梦想.html)  [code](https://topo022.github.io/homework/word.py)
 ## 第二次作业
 ### 作业一
-设计一个网页，实现某个搜索引擎的搜索功能\\
+设计一个网页，实现某个搜索引擎的搜索功能
+
 [Google一下……](https://topo022.github.io/homework/search.html)
