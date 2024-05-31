@@ -13,8 +13,81 @@
         width: 100%;
     }
     </style>
+    <style>
+        body,div{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-size: 100%;
+            padding: 0px;
+            background-clip: padding-box;
+            background-repeat: repeat-y;
+            background-position: center center;
+            transition-property: background;
+            transition-duration: 10s;
+            transition-delay: 5s; 
+        }
+        body:hover{
+            transition: all;
+        }
+        .box{
+            font-family: 'kaiti';
+            font-size: 2em;
+            text-shadow: 1px 1px 1px white;
+        }
+        .box p{
+            text-shadow: 1px 1px 1px yellowgreen;
+            padding-left: 1em;
+            margin: 0;
+            color:steelblue;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .centered
+            {
+                text-align: center;
+            }
+        .highlight_text
+            {
+                color: red;
+                font-style:italic;
+            }   
+        .normal_text
+            {
+                color: black;
+            }
+        .deleted_text
+            {
+                color: grey;
+                text-decoration:line-through;
+            }
+        .roosverlt-image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: block; /* 使得图片在页面中居中 */
+            margin: 0 auto; /* 居中图片 */
+            transform: scale(0.6);
+        }
+        figcaption {
+            text-align: right; /* 文字居中 */
+            font-style: italic; /* 斜体 */
+            margin-top: -50px; /* 上边距为10像素 */
+            margin-right: 250px; /* 右边距为20像素 */
+        }
+    </style>
 </head>
+<body class="centered">
+        <h1>对过去一年大陆院线电影数据的分析</h1>
+        
+        <p class="normal_text">本页面对2023-5-26至2024-5-23期间大陆院线电影票房等数据进行了分析处理。
+        </p>
+        <p class="normal_text">
+        得到了每日票房、场次、人流量关系图，人们对电影的类型偏好词云图，时长、评分与电影数量关系图，时长、评分与电影票房关系图，过去一年院线电影年代分布图。</p>
 
+
+</body>
 <body >
     <style>.box { justify-content:center; display:flex; flex-wrap:wrap;  } </style>
     <div class="box">
